@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { coverImage } from '../config';
 
 const SKILLS = [
   'Python', 'JavaScript', 'TypeScript', 'React', 'Node.js',
@@ -123,7 +122,7 @@ export default function Tutor() {
             {/* Right: Image + Stats */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
               <div className="profile-image">
-                <img src={coverImage} alt="Phil — Tutor at Phil Academy" />
+                <img src="/tutor.png" alt="Phil — Tutor at Phil Academy" />
               </div>
 
               {/* Quick stats */}
