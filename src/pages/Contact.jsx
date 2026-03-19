@@ -47,12 +47,7 @@ export default function Contact() {
       {/* Contact Section */}
       <section className="section" style={{ background: 'var(--bg)' }}>
         <div className="container">
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 40,
-            alignItems: 'start',
-          }}>
+          <div className="contact-grid">
             {/* Form */}
             <div style={{
               background: 'var(--surface)',
@@ -91,7 +86,7 @@ export default function Contact() {
                     />
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                  <div className="contact-form-row">
                     <div className="form-group">
                       <label className="form-label">
                         <i className="fas fa-envelope" style={{ color: 'var(--primary)' }} /> Email

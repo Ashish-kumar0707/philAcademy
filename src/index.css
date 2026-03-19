@@ -1034,8 +1034,21 @@ h1, h2, h3, h4, h5 {
 .week-activity strong { color: var(--primary-dark); }
 
 /* =========================================
-   CONTACT INFO CARD
+   CONTACT
    ========================================= */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
 .contact-info-card {
   background: linear-gradient(135deg, #0F0C29, #312E81);
   border-radius: var(--radius-lg);
@@ -1143,7 +1156,7 @@ h1, h2, h3, h4, h5 {
    ========================================= */
 .profile-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 40px;
   align-items: start;
 }
@@ -1174,13 +1187,15 @@ h1, h2, h3, h4, h5 {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  max-height: 440px;
 }
 
 .profile-image img {
   width: 100%;
-  height: auto;
+  height: 440px;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .skill-tags {
@@ -1250,6 +1265,8 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 768px) {
   .profile-section { grid-template-columns: 1fr; }
   .profile-card { padding: 24px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+  .contact-form-row { grid-template-columns: 1fr; }
   .contact-info-card { padding: 28px; }
 }
 
