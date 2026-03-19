@@ -204,6 +204,21 @@ export default function Contact() {
                 </div>
               </div>
 
+              <div className="contact-info-item">
+                <div className="contact-info-icon">💬</div>
+                <div>
+                  <div className="contact-info-label">WhatsApp</div>
+                  <a
+                    href="https://wa.me/917850858287"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: '#4ADE80', fontWeight: 600, textDecoration: 'none', fontSize: '0.95rem' }}
+                  >
+                    +91 78508 58287
+                  </a>
+                </div>
+              </div>
+
               {/* Feature callout */}
               <div style={{
                 marginTop: 24,
