@@ -1373,3 +1373,20 @@ h1, h2, h3, h4, h5 {
 
 /* Ensure full-width sections */
 .full-width { width: 100%; margin-left: 0; margin-right: 0; }
+
+/* =========================================
+   ABOUT — MISSION GRID
+   ========================================= */
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

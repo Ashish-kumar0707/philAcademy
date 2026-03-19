@@ -18,12 +18,7 @@ export default function About() {
       {/* Mission */}
       <section className="section" style={{ background: 'var(--bg)' }}>
         <div className="container">
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 56,
-            alignItems: 'center',
-          }}>
+          <div className="mission-grid">
             <div>
               <span className="section-label">
                 <i className="fas fa-bullseye" style={{ marginRight: 6 }} />Our Mission
